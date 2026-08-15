@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRICULAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body-class">
+
+        <!-- TÍTULO -->
+        <div class="title-class">
+            <h1 class="title">CENTRO DE GESTION DE MATRICULAS</h1>
+            <p class="periodo" id="periodo-texto">PERIODO 2026-2</p>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="main-content">
+
+            <!-- PANEL IZQUIERDO -->
+            <div class="content-goals-grafic">
+
+                <div class="goals-inperson">
+                    <h2 class="goals-title">MATRICULAS PRESENCIALES</h2>
+                    <div class="goals-graphic">
+                        <canvas id="presencial"></canvas>
+                        <div class="porcentaje" id="txt-presencial">-/-</div>
+                    </div>
+                </div>
+
+                <div class="goals-virtual">
+                    <h2 class="goals-title">MATRICULAS VIRTUALES</h2>
+                    <div class="goals-graphic">
+                        <canvas id="virtual"></canvas>
+                        <div class="porcentaje" id="txt-virtual">-/-</div>
+                    </div>
+                </div>
+
+                <div class="goals-distance">
+                    <h2 class="goals-title">MATRICULAS A DISTANCIA</h2>
+                    <div class="goals-graphic">
+                        <canvas id="distancia"></canvas>
+                        <div class="porcentaje" id="txt-distancia">-/-</div>
+                    </div>
+                </div>
+
+                <div class="goals-total-Enrollments">
+                    <h2 class="goals-title">TOTAL DE MATRICULAS</h2>
+                    <div class="goals-graphic">
+                        <canvas id="total"></canvas>
+                        <div class="porcentaje" id="txt-total">-/-</div>
+                    </div>
+                </div>
+
+                <div class="goals-tuition-free">
+                    <h2 class="goals-title">VALOR DE LAS MATRICULAS</h2>
+                    <div class="goals-graphic">
+                        <canvas id="valor"></canvas>
+                        <div class="porcentaje" id="txt-valor"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PANEL DERECHO: se llena dinámicamente desde scripts.js -->
+            <div class="teams-container" id="teams-container">
+                <p style="grid-column:1/3;text-align:center;">Cargando datos...</p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
