@@ -144,6 +144,9 @@ body{
     justify-content:center;
     color: white;
 }
+.content-goals-globals, span{
+    font-size: 25px;
+}
 /*CADA ASESOR*/
 
 .content-teams{
